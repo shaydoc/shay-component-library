@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name shay-component-library ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -34,6 +35,7 @@
       "parser": "babel-eslint"
     }
   },
+  "main": "dist/shay-component-library.umd.js",
   "postcss": {
     "plugins": {
       "autoprefixer": {}
